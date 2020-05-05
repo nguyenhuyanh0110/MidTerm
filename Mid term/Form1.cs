@@ -33,14 +33,6 @@ namespace Mid_term
             string MaBP = cbbBP.SelectedValue.ToString(); //load danh sách khi chưa chọn ccb
             loadDSBPtheoDV(MaBP);
         }
-
-        private void cbbBP_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //chọn cbbMaBP để lấy dữ liệu
-            string MaBP = cbbBP.SelectedValue.ToString();
-            // load dgv theo dữ liệu cbb
-            loadDSBPtheoDV(MaBP);
-        }
         private void loadDSBPtheoDV(string MaBP)
         {
             dgvBP.DataSource = db.DONVIs.Where(p => p.MABP == MaBP).Select(p => new
@@ -52,6 +44,14 @@ namespace Mid_term
             });
         }
 
+        private void cbbBP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //chọn cbbMaBP để lấy dữ liệu
+            string MaBP = cbbBP.SelectedValue.ToString();
+            // load dgv theo dữ liệu cbb
+            loadDSBPtheoDV(MaBP);
+        }
+        
         private void dgvBP_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int click = e.RowIndex; //lấy giá trị click chuột ở dgv
