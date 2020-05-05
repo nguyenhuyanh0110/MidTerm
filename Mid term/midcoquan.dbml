@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="midCoQuan" Class="midcoquanDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=midCoQuan;Integrated Security=True" SettingsObjectName="Mid_term.Properties.Settings" SettingsPropertyName="midCoQuanConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.BoPhan" Member="BoPhans">
+    <Type Name="BoPhan">
+      <Column Name="MABP" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENBP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="BoPhan_DONVI" Member="DONVIs" ThisKey="MABP" OtherKey="MABP" Type="DONVI" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DONVI" Member="DONVIs">
+    <Type Name="DONVI">
+      <Column Name="MADV" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TENDV" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NGAYTL" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MABP" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="BoPhan_DONVI" Member="BoPhan" ThisKey="MABP" OtherKey="MABP" Type="BoPhan" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

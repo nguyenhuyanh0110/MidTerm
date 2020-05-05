@@ -1,0 +1,10 @@
+D:\Project\Mid term\Mid term\bin\Debug\Mid term.exe.config
+D:\Project\Mid term\Mid term\bin\Debug\Mid term.exe
+D:\Project\Mid term\Mid term\bin\Debug\Mid term.pdb
+D:\Project\Mid term\Mid term\obj\Debug\Mid term.csprojAssemblyReference.cache
+D:\Project\Mid term\Mid term\obj\Debug\Mid_term.Form1.resources
+D:\Project\Mid term\Mid term\obj\Debug\Mid_term.Properties.Resources.resources
+D:\Project\Mid term\Mid term\obj\Debug\Mid term.csproj.GenerateResource.cache
+D:\Project\Mid term\Mid term\obj\Debug\Mid term.csproj.CoreCompileInputs.cache
+D:\Project\Mid term\Mid term\obj\Debug\Mid term.exe
+D:\Project\Mid term\Mid term\obj\Debug\Mid term.pdb

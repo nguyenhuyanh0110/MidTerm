@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="midcoquan">
+  <DataContextMoniker Name="/midcoquanDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d81f6b9c-bcc4-4fab-9cb4-961ce2c87e95" absoluteBounds="0.75, 1.125, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/midcoquanDataContext/BoPhan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29005edb-d077-4151-8e55-799edc289250" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="292322a1-3983-4967-a0e6-6a42f54a32f4" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/midcoquanDataContext/DONVI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="71308fda-e0a1-4754-a552-55edd585c20d" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/midcoquanDataContext/BoPhan/BoPhan_DONVI" />
+      <nodes>
+        <classShapeMoniker Id="d81f6b9c-bcc4-4fab-9cb4-961ce2c87e95" />
+        <classShapeMoniker Id="292322a1-3983-4967-a0e6-6a42f54a32f4" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
